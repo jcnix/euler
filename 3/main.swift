@@ -3,12 +3,11 @@ import Glibc
 let num = 600851475143
 
 func is_prime(n: (Int)) -> Bool {
-	var a = Int(sqrt(Double(n)))
-	while a > 1 {
-		if n % a == 0 {
+	let a = Int(sqrt(Double(n)))
+	for i in 2...a {
+		if n % i == 0 {
 			return false
 		}
-		a -= 1
 	}
 	return true
 }
@@ -23,3 +22,4 @@ while n > 0 {
 	}
 	n -= 1
 }
+
