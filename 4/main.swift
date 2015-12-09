@@ -19,8 +19,8 @@ var largest = 0
 while a > 1 {
 	while b > 1 {
 		n = a * b
-		if(is_palindrome(n)) {
-			if(n > largest) {
+		if is_palindrome(n) {
+			if n > largest {
 				largest = n
 			}
 		}
