@@ -1,4 +1,8 @@
-import Glibc
+#if os(Linux)
+	import Glibc
+#else
+	import Darwin
+#endif
 
 let num = 600851475143
 

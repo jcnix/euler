@@ -1,4 +1,8 @@
-import Glibc
+#if os(Linux)
+	import Glibc
+#else
+	import Darwin
+#endif
 
 /* We are using Euclid's formula for finding
  * Pythagorean triplets.

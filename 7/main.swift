@@ -1,4 +1,8 @@
-import Glibc
+#if os(Linux)
+	import Glibc
+#else
+	import Darwin
+#endif
 
 func is_prime(n: Int) -> Bool {
 	let a = Int(sqrt(Double(n)))

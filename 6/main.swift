@@ -1,4 +1,8 @@
-import Glibc
+#if os(Linux)
+	import Glibc
+#else
+	import Darwin
+#endif
 
 // Sum of Squares
 
